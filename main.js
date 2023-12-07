@@ -14,7 +14,7 @@ function start()
 recognition.onresult = function(event)
 {
     console.log(event);
-    var Content = event.results[0][0]transcript;
+    var Content = event.results[0][0].transcript;
     Textbox.innerHTML = Content;
     console.log(Content);
     if(Content =="selfie")
